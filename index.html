@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eternal Flux</title>
+  <meta name="description" content="Eternal Flux — see how your emotions change while you watch video." />
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,Arial,sans-serif;
+           background:#0b0b0d; color:#fff; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px; }
+    .card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.10);
+            border-radius: 18px; padding: 22px; }
+    h1 { margin: 0 0 8px; font-size: 40px; letter-spacing: .2px; }
+    p { margin: 0 0 14px; color: rgba(255,255,255,.78); font-size: 16px; line-height: 1.5; }
+    .row { display:flex; gap:12px; flex-wrap: wrap; margin-top: 14px; }
+    .btn { display:inline-block; padding: 12px 14px; border-radius: 14px; text-decoration:none;
+           border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.10); color:#fff; }
+    .btn.primary { background: #6d5efc; border-color: rgba(255,255,255,.08); }
+    ul { margin: 12px 0 0 18px; color: rgba(255,255,255,.78); }
+    footer { margin-top: 18px; font-size: 13px; color: rgba(255,255,255,.55); }
+    a { color: rgba(255,255,255,.85); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Eternal Flux</h1>
+      <p>See how your emotions change while you watch video.</p>
+
+      <ul>
+        <li>Watch short videos and track emotional patterns over time</li>
+        <li>Processing happens on-device</li>
+        <li>No camera recordings are saved</li>
+      </ul>
+
+      <div class="row">
+        <!-- TODO: replace # with your TestFlight public link (or an invite flow link) -->
+        <a class="btn primary" href="#" target="_blank" rel="noopener">Join TestFlight</a>
+        <a class="btn" href="privacy.html">Privacy Policy</a>
+        <!-- TODO: replace email -->
+        <a class="btn" href="mailto:youremail@example.com">Contact</a>
+      </div>
+
+      <footer>
+        <div>© <span id="y"></span> Eternal Flux</div>
+      </footer>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
